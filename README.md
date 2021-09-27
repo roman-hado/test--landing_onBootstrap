@@ -1,2 +1,1 @@
-# test--landing_onBootstrap
-[Demo](https://roman-hado.github.io/test--landing_onBootstrap/)
+You can see my landing [HERE](https://roman-hado.github.io/test--landing_onBootstrap/)
