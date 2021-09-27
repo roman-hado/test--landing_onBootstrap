@@ -1,0 +1,18 @@
+.line {
+  width: 230px;
+  margin: 20px auto 0;
+  border-top: 6px solid #EDEFF3;
+
+  @include onIPad {
+    margin: 40px 0 0 0;
+    border-top: 7px solid #EDEFF3;
+  }
+
+  &__second {
+    display: none;
+
+    @include onIPad {
+      display: block;
+    }
+  }
+}

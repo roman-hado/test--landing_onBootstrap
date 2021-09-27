@@ -1,0 +1,8 @@
+.standards {
+  height: 10px;
+  background: red;
+}
+.standards__info {
+  background: red;
+  width: 500px;
+}

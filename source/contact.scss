@@ -1,0 +1,107 @@
+.contact {
+  overflow: hidden;
+  padding-bottom: 10px;
+
+  @include onIPad {
+    padding-bottom: 77px;
+  }
+
+  &__wrapper {
+    @include onIPad {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 60px;
+    }
+  }
+
+  &__info {
+    @include onIPad {
+      display: flex;
+      width: 70%;
+    }
+  }
+
+  &__logo {
+    width: max-content;
+    margin: 50px auto 30px;
+    text-align: center;
+
+    @include onIPad {
+      width: 30%;
+    }
+
+    &--img {
+      @include onIPad {
+        margin-top: 15%;
+      }
+    }
+  }
+
+  &__title {
+    @include onIPad {
+      display: flex;
+      align-items: center;
+    }
+
+    &--text {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 43px;
+      letter-spacing: -0.4px;
+      text-align: center;
+
+      @include onIPad {
+        text-align: left;
+      }
+
+      color: #1652AC;
+    }
+
+    @include onIPad {
+      width: 50%;
+    }
+  }
+
+  &__text {
+    &--paragraph {
+      color: #45494F;
+      font-size: 16px;
+      line-height: 32px;
+      margin: 20px 10px 0px;
+    }
+
+    @include onIPad {
+      width: 50%;
+    }
+  }
+
+  &__email {
+    color: #1c5ddf;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  &__button {
+    margin: 30px 0 0 10px;
+    width: 330px;
+
+    @include onIPad {
+      width: 300px;
+    }
+
+    &__span {
+      margin-left: -120px;
+      margin-right: 50px;
+
+      @include onIPad {
+        margin-left: -103px;
+        margin-right: 40px;
+      }
+    }
+  }
+
+  &__btn {
+    text-transform: none;
+    text-align: center;
+  }
+}

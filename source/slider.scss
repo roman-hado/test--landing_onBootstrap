@@ -1,0 +1,61 @@
+.carousel {
+  margin: 0 auto;
+
+  @include onIPad {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+.slider {
+  padding: 40px 10px;
+  background: #FBFBFC;
+  height: max-content;
+
+  @include onIPad {
+    height: 900px;
+  }
+
+  &__title {
+    font-family: "BBCReithSans";
+    text-align: center;
+    letter-spacing: 4.42px;
+    color: #020303;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    padding-bottom: 10px;
+
+    @include onIPad {
+      font-size: 28px;
+      padding: 40px 0 30px 0;
+    }
+  }
+
+  &__buttons {
+    margin: 20px auto 0;
+    width: max-content;
+  }
+
+  &__button {
+    height: 14px;
+    border-radius: 50%;
+    background: #80ABFF;
+    opacity: 0.35;
+    border: 1px solid #0045AC;
+    box-sizing: border-box;
+
+    &:hover {
+      background: linear-gradient(180deg, #005BE4 0%, rgba(0, 96, 241, 0) 100%), #004FC7;
+      border: 1px solid #BED8FF;
+    }
+  }
+}
+
+.slide {
+  height: max-content;
+}
+
+.carousel-indicators {
+  margin-top: 500px;
+}

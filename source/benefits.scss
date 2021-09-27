@@ -1,0 +1,70 @@
+.benefits {
+  background-color: #FBFBFC;
+
+  &__title {
+    padding-top: 27px;
+    font-family: "BBCReithSans";
+    text-align: center;
+    color: #020303;
+    letter-spacing: 4.42px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+
+    @include onIPad {
+      font-size: 28px;
+      padding-top: 67px;
+    }
+  }
+
+  &__cards {
+    margin-top: 40px;
+    padding-bottom: 55px;
+    
+    @media (min-width: 970px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 136px;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    margin-top: 8px;
+
+    @media (min-width: 970px) {
+      max-width: 32.3%;
+      margin-right: 8px;
+    }
+
+    &--img {
+      margin-left: 34px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &--text {
+      margin: 0 0 0 40px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: -0.4px;
+      color: #45494F;
+
+      @include onIPad {
+        padding-right: 20px;
+        font-size: 19px;
+      }
+    }
+  }
+  
+  &__photo {
+    max-width: 55px;
+    max-height: 50px;
+  }
+}

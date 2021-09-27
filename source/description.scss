@@ -1,0 +1,122 @@
+.description {
+  &__first-block {
+    display: flex;
+    padding-top: 14px;
+  }
+
+  &__info {
+    @include onIPad {
+      padding: 70px 50px 0 16px;
+      width: 50%;
+    }
+  }
+
+  &__mobile__photo {
+    width: max-content;
+    margin: 0 auto;
+
+    @include onIPad {
+      display: none;
+    }
+  }
+
+  &__photo {
+    display: none;
+
+    @include onIPad {
+      display: block;
+      width: 50%;
+    }
+
+    &--img {
+      width: 100%;
+      object-fit: cover;
+      transition-duration: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__second-block {
+    @include onIPad {
+      display: flex;
+    }
+  }
+
+  &__second__photo {
+    width: max-content;
+    margin: 0 auto;
+
+    transition-duration: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include onIPad {
+      max-width: 50%;
+    }
+  }
+
+  &__second__photo--img {
+    position: relative;
+    right: 120px;
+    z-index: -1;
+
+    @media (max-width: 1100px) {
+      right: 70px;
+      width: 500px;
+      padding-top: 40px;
+    }
+
+    @media (max-width: 500px) {
+      padding: 0px 0 20px 0;
+      width: 300px;
+      right: 0px;
+    }
+  }
+
+  &__title--text {
+    color: #1652AC;
+    font-family: "BBCReithSans";
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    line-height: 58px;
+  
+    @include onIPad {
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    line-height: 32px;
+    color: #45494F;
+    font-weight: 400;
+
+    @include onIPad {
+      margin: 34px 0 10px 0;
+    }
+  }
+
+  &__second-block {
+    margin-top: 50px;
+  }
+}
+
+.second-info {
+  position: relative;
+  z-index: 1;
+  
+  @include onIPad {
+    margin-left: 90px;
+  }
+}
+
+.impotent--text {
+  color: #020303;
+  font-weight: 600;
+}
